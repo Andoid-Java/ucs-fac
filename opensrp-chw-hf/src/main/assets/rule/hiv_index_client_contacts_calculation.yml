@@ -1,0 +1,46 @@
+---
+name: step2_age_calculated
+description: Age calculated
+priority: 1
+condition: "true"
+actions:
+  - "calculation = step2_age"
+---
+name: step2_wra
+description: wra calculation
+priority: 1
+condition: "step2_sex == 'Female' && (step2_age_calculated >= 10 && step2_age_calculated <= 49)"
+actions:
+  - "calculation = 1"
+---
+name: step2_surname
+description: set surname as the one added in step one
+priority: 1
+condition: "true"
+actions:
+  - "calculation = step1_fam_name"
+---
+name: step2_relationship
+description: set relationship
+priority: 1
+condition: "true"
+actions:
+  - "calculation = step2_age_calculated < 15 ? (step2_age_calculated < (global_index_client_age - 15) && global_index_client_age > 15) ? step2_relationship_under_15_for_possible_children : step2_relationship_under_15
+                  : (step2_age_calculated >= 15 && step2_age_calculated < 19) ? (step2_age_calculated < (global_index_client_age - 15)) ? step2_relationship_above_15_to_18_possible_children : step2_relationship_above_15_to_18
+                  : (step2_age_calculated >= 19 && step2_sex.equals('Female') && (step2_age_calculated > (global_index_client_age + 15) && global_index_client_age < 19)) ? step2_relationship_above_18_possible_parents_female
+                  : (step2_age_calculated >= 19 && step2_sex.equals('Male') && (step2_age_calculated > (global_index_client_age + 15) && global_index_client_age < 19)) ? step2_relationship_above_18_possible_parents_male
+                  : step2_relationship_above_18;"
+---
+name: step2_first_name
+description: set first name as the one added in step one
+priority: 1
+condition: "true"
+actions:
+  - "calculation = step1_client_first_name"
+---
+name: step2_middle_name
+description: set middle name as the one added in step one
+priority: 1
+condition: "true"
+actions:
+  - "calculation = step1_client_middle_name"

@@ -1,0 +1,161 @@
+{
+  "count": "1",
+  "encounter_type": "ANC Counselling",
+  "entity_id": "",
+  "metadata": {
+    "start": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "start",
+      "openmrs_entity_id": "163137AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "end": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "end",
+      "openmrs_entity_id": "163138AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "deviceid": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "deviceid",
+      "openmrs_entity_id": "163149AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "subscriberid": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "subscriberid",
+      "openmrs_entity_id": "163150AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "simserial": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "simserial",
+      "openmrs_entity_id": "163151AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "phonenumber": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "phonenumber",
+      "openmrs_entity_id": "163152AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "encounter_location": ""
+  },
+  "step1": {
+    "title": "Counselling",
+    "fields": [
+      {
+        "key": "counselling_given",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "concept",
+        "openmrs_entity_id": "counselling_given",
+        "type": "check_box",
+        "label": "Counselling provided to the mother and family members ",
+        "label_text_style": "normal",
+        "text_color": "#C0C0C0",
+        "options": [
+          {
+            "key": "chk_attended_anc_contacts",
+            "text": "Attend ANC contacts early",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_attended_anc_contacts"
+          },
+          {
+            "key": "chk_anc_danger_signs",
+            "text": "Pregnancy danger signs",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_anc_danger_signs"
+          },
+          {
+            "key": "chk_maternal_nutrition",
+            "text": "Maternal nutrition during pregnancy and breast feeding",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_maternal_nutrition"
+          },
+          {
+            "key": "chk_personal_delivery",
+            "text": "Personal delivery plan",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_personal_delivery"
+          },
+          {
+            "key": "chk_hiv_aids",
+            "text": "HIV/AIDS general information",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_hiv_aids"
+          },
+          {
+            "key": "chk_pmtct_for_mother",
+            "text": "PMTCT for the mother",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_pmtct_for_mother"
+          },
+          {
+            "key": "chk_preventing_malaria",
+            "text": "Preventing malaria for pregnant mothers",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_preventing_malaria"
+          },
+          {
+            "key": "chk_physical_changes",
+            "text": "Physical changes for a mother after giving birth",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_physical_changes"
+          },
+          {
+            "key": "chk_pnc_danger_signs",
+            "text": "PNC danger signs",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_pnc_danger_signs"
+          },
+          {
+            "key": "chk_care_of_infant",
+            "text": "Care of infant after birth",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_care_of_infant"
+          },
+          {
+            "key": "chk_infant_danger_signs",
+            "text": "Infant danger signs",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_infant_danger_signs"
+          },
+          {
+            "key": "chk_hiv_exposed_infant",
+            "text": "Follow-up for the HIV-exposed infant",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_hiv_exposed_infant"
+          },
+          {
+            "key": "chk_breastfeeding",
+            "text": "Breastfeeding",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_breastfeeding"
+          },
+          {
+            "key": "chk_exclusive_breast_feeding ",
+            "text": "Plan for family planning using exclusive breast feeding for 6 months after birth",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_exclusive_breast_feeding"
+          },
+          {
+            "key": "chk_family_planning",
+            "text": "Family planning",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_family_planning"
+          },
+          {
+            "key": "chk_infection_prevention",
+            "text": "Infection prevention and control",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "chk_infection_prevention"
+          }
+        ],
+        "v_required": {
+          "value": "true",
+          "err": "Please pick at least one"
+        }
+      }
+    ]
+  }
+}
